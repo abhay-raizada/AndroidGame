@@ -2,6 +2,8 @@ package com.abhay.alertgame;
 
 import java.util.List;
 
+import android.graphics.Paint;
+
 import com.abhay.framework.Game;
 import com.abhay.framework.Graphics;
 import com.abhay.framework.Screen;
@@ -9,6 +11,7 @@ import com.abhay.framework.Input.TouchEvent;
 
 
 public class MainMenuScreen extends Screen {
+	Paint paint ;
     public MainMenuScreen(Game game) {
         super(game);
     }
@@ -51,6 +54,7 @@ public class MainMenuScreen extends Screen {
     public void paint(float deltaTime) {
         Graphics g = game.getGraphics();
         g.drawImage(Assets.menu, 0, 0);
+       
     }
 
 

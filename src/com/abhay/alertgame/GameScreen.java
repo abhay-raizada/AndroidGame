@@ -178,13 +178,16 @@ public class GameScreen extends Screen {
         Graphics g = game.getGraphics();
 
         g.drawARGB(155, 0, 0, 0);
-        g.drawString("Tap each side of the screen to move in that direction.",
+        g.drawString("Tap Once again to take a picture",
                 640, 300, paint);
 
     }
 
     private void drawRunningUI() {
         Graphics g = game.getGraphics();
+        g.drawARGB(155, 0, 0, 0);
+        g.drawString("Hey You look cute!",540,200, paint);
+        g.drawImage(Assets.monkey, 440,300);
 
     }
 
@@ -192,6 +195,7 @@ public class GameScreen extends Screen {
         Graphics g = game.getGraphics();
         // Darken the entire screen so you can display the Paused screen.
         g.drawARGB(155, 0, 0, 0);
+        g.drawString("The screen is paused",640,300, paint);
 
     }
 
